@@ -1,0 +1,465 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+.mybtn:checked+label {
+	background-color: white;
+	color: black;
+}
+
+.box1:checked+label {
+	background-color: red;
+	color: black;
+}
+
+.active {
+	color: skyblue;
+}
+
+.deactive {
+	color: red;
+}
+
+.base {
+	background-color: lightgray;
+
+}
+
+
+/* ===================================Menu started from here========================================================== */
+.menu {
+	border: 2px solid rgb(174, 171, 168);
+	background-color: slategray;
+	min-height: 750px;
+}
+
+.col-3 {
+	padding-top: 10px;
+}
+
+.menu .logo {
+	border-radius: 10px;
+	width: 100%;
+	padding: 5px 20px;
+	margin-bottom: 50px;
+
+}
+
+.menu .logo .font {
+	color: aliceblue;
+	font-family: monospace;
+	letter-spacing: 3px;
+	;
+
+	font-size: 30px;
+}
+
+.menu>ul {
+
+	list-style-type: none;
+
+	width: 60%;
+	margin: 1px auto;
+}
+
+.menu ul li {
+
+	margin: 5px auto;
+	margin-bottom: 40px;
+}
+
+.menu ul li a:hover {
+	color: white;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	padding: 5px 15px;
+	color: white;
+	font-weight: 600;
+}
+
+/* ==============================Menu ends Here========================================= */
+
+/* ===================================content starts here============================ */
+.seat-main,
+.login-form,
+.register-form {
+
+	padding: 20px 3px 40px 20px;
+}
+
+.col-8 .date_form {
+	margin-top: 20px;
+}
+
+.seat-main .date_form form input[type="date"]::-webkit-clear-button {
+	display: none;
+	-webkit-appearance: none;
+
+}
+
+#psydat {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-left: 14%;
+}
+
+.date_form .timebox {
+	padding-top: 6px;
+	padding-bottom: 3px;
+	margin-left: 31%;
+	margin-top: 5px;
+	background-color: lightgray;
+	border-radius: 3px;
+	border-width: 1.5px;
+	border-color: black;
+
+
+}
+
+.date_form #dateselect {
+	padding-top: 3px;
+	margin-bottom: 9px;
+	background-color: lightgray;
+	border-radius: 3px;
+
+	border-color: black;
+
+
+
+}
+
+.movie_name_printing {
+	margin-left: 34%;
+	text-align: center;
+}
+
+.psys {
+	margin-left: 31%;
+	margin-top: 3%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.seat_selected_and_total {
+	margin-right: 10%;
+}
+
+.seat-section .seat-row .col-5 {
+
+	margin: 5px;
+	padding: 10px 10px;
+}
+
+.jumbotron {
+	background-color: slategrey;
+	width: 70%;
+	margin-left: 10%;
+
+
+}
+
+.seat-section .seat-row .col-5:nth-child(1) {
+	margin-left: 60px
+}
+
+.seat-section .seat-row {
+	margin-top: 35px;
+
+}
+
+.btn1 {
+	margin-left: 335px;
+
+}
+
+.seat-section .symbol .one {
+	font-size: 19px;
+	color: red;
+}
+
+.seat-section .symbol {
+	margin-left: 210px;
+	margin-top: 15px;
+}
+
+.seat-section .symbol .two {
+	font-size: 19px;
+	margin-left: 20px;
+	color: green;
+}
+
+/* ===========================================Login starts here============================================= */
+.login {
+
+	width: 90%;
+	margin-left: 35px;
+	padding: 10px 15px 30px 15px;
+	box-shadow: 5px 5px 10px gray;
+}
+
+
+
+.login-head {
+	background-color: slategray;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 4px;
+	margin-top: 4px;
+	border-radius: 5px;
+}
+
+.login-head h3 {
+	color: white;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.login_button {
+	margin-left: 23%;
+	width: 50%;
+	margin-top: 10px;
+}
+
+.login-register {
+	margin-top: 10px;
+	margin-left: 34%;
+}
+
+/* ======================================Order history start here============================================== */
+.history {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.history .history-section .history-head {
+	background-color: slategrey;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 8px;
+}
+
+.history-section .history-head p {
+	margin-right: 15px;
+}
+
+.history-section .history-head p span .fa-user {
+	padding: 8px;
+	background-color: white;
+	margin: 3px 0 3px 0;
+	border-radius: 15px;
+}
+
+.history-section .history-head p .name-user {
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+}
+
+.history-section .history-head p span .fa-envelope {
+	padding: 8px;
+	background-color: white;
+	margin: 3px 0 3px 0;
+	border-radius: 15px;
+}
+
+/* ======================================Dashboard start here============================================== */
+.dashboard {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.dashboard .dashboard-section .dashboard-head {
+	background-color: slategray;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 8px;
+}
+
+.dashboard-section .dashboard-head p {
+	margin-right: 15px;
+}
+
+.dashboard-section .dashboard-head p span .fa-user {
+	padding: 8px;
+	background-color: white;
+	margin: 3px 0 3px 0;
+	border-radius: 15px;
+}
+
+.dashboard-section .dashboard-head p .name-user {
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+}
+
+.dashboard .dashboard-section .dashboard-seat {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.dashboard-section .dashboard-head p span .fa-envelope {
+	padding: 8px;
+	background-color: white;
+	margin: 3px 0 3px 0;
+	border-radius: 15px;
+}
+
+/* ==============================================Before Login home============================================== */
+.before_login_home {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.before_login_home .before_head {
+	background-color: slategray;
+	position: relative;
+}
+
+.before_login_home .before_head input {
+	margin: 12px 0 8px 100px;
+	border: none;
+	outline: none;
+	background: white;
+	border-radius: 5px;
+	padding: 8px;
+	margin-left: 110px;
+	margin-bottom: 10px;
+	font-size: 17px;
+	font-weight: 400;
+	width: 600px;
+}
+
+.before_login_home .before_head button {
+	padding: 3px 8px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	background: none;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: -35px;
+}
+
+/* =======================================Card flip section========================================================== */
+.before_main_section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 25px;
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+
+.before_main_section .card-section {
+	width: 250px;
+	height: 328px;
+	box-shadow: 2px 5px 5px 5px darkgray;
+	background-color: slategray;
+}
+
+.card-section img {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.card-section .card_body button {
+	margin-left: 5%;
+	width: 90%;
+	padding-top: 5px;
+	margin-top: 2%;
+	background-color: #f7364a;
+}
+
+/* =======================================main dashboard section========================================================== */
+.main-dashboard {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.main-dashboard .main-dashboard-head {
+	background-color: slategray;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-dashboard .main-dashboard-head input {
+	margin: 12px 0 8px 100px;
+	border: none;
+	outline: none;
+	background: white;
+	border-radius: 5px;
+	padding: 8px;
+	font-size: 17px;
+	font-weight: 400;
+	width: 400px;
+}
+
+.main-dashboard .main-dashboard-head button {
+	padding: 3px 8px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	background: none;
+	position: absolute;
+	margin-top: 17px;
+	margin-left: -35px;
+}
+
+.main-dashboard-head .main-dashboard-right p {
+	margin-right: 15px;
+	margin-top: 8px;
+
+}
+
+.main-dashboard-head .main-dashboard-right p span .fa-user {
+	padding: 8px;
+	background-color: white;
+	border-radius: 15px;
+}
+
+.main-dashboard-head .main-dashboard-right p .name-user {
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+}
+
+.main-dashboard-head .main-dashboard-right p span .fa-envelope {
+	padding: 8px;
+	background-color: white;
+	margin-top: 13px;
+	border-radius: 15px;
+}
+
+.main-dashboard .notice {
+	box-shadow: 0 3px 5px gray;
+
+}
+
+/* ================================================Setting starts here===================================================== */
+.history-section .setting-details {
+	width: 700px;
+	height: 300px;
+	background-color: lightslategrey;
+	box-shadow: 5px 5px 10px gray;
+	margin-top: 100px;
+	margin-left: 80px;
+	padding: 5px 20px;
+
+}
+
+.setting-details .table-edit {
+	line-height: 70px;
+	margin-left: 190px;
+}
+
+.setting-details table tbody tr th {
+
+	padding-right: 35px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>About Us</title>
+	<link rel="stylesheet" href="#" th:href="@{/css/bootstrap.css}" />
+	<link rel="stylesheet" href="#" th:href="@{/css/all.css}" />
+	<link rel="stylesheet" href="#" th:href="@{/css/index.css}" />
+</head>
+
+<body style="background-color: black;">
+
+	<div class="container base">
+		<div class="row base-row">
+			<div class="col-3 menu">
+				<div class="logo mb-5 text-center text-light bg-dark pt-1 pb-1">
+					<h4>CINEPOLIS</h4>
+				</div>
+				<ul class="list">
+					<li><a th:href="@{/home}"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
+					<li><a th:href="@{/setting}"><i class="fas fa-cogs"></i>&nbsp;&nbsp;Setting</a></li>
+					<li><a th:href="@{/all-customers-records}"><i class="fas fa-users"></i>&nbsp;&nbsp;All Users</a>
+					</li>
+					<li><a th:href="@{/order-history}"><i class="fas fa-history"></i>&nbsp;&nbsp;Orders</a></li>
+					<li><a th:classappend="${menu == 'about'} ? 'text-dark' : ' '" th:href="@{/about-us}"><i
+								class="fas fa-address-card"></i>&nbsp;&nbsp;About
+							us</a></li>
+					<li><a th:href="@{/contact-us}"><i class="fas fa-phone-square-alt"></i>&nbsp;&nbsp;Contact
+							us</a></li>
+					<li><a th:href="@{/logout}"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a></li>
+				</ul>
+
+			</div>
+			<div class="col-9 history">
+				<div class="history-section">
+					<div class="history-head">
+						<p>
+							<span><i class="fas fa-user"></i></span>&nbsp;<span class="name-user"
+								th:if="${session.user.name}"
+								th:text="${session.user.name}"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i
+									class="fas fa-envelope"></i>
+								<sup><i class="fas fa-sms"></i></sup></span>
+						</p>
+					</div>
+
+					<div class="container">
+						<div class="row">
+							<div class="col-12 text-center text-light bg-dark">
+								<h1 class="mt-4">About Us</h1>
+								<p class="mt-4">Welcome to Cinepolis! We are dedicated to providing you with the best
+									movie experience possible. At Cinepolis, we believe in the power of storytelling and
+									the magic of cinema. Our theaters are equipped with state-of-the-art sound and
+									projection systems to bring movies to life in stunning detail.</p>
+								<p>At Cinepolis, we offer a wide range of movies, from the latest blockbusters to
+									timeless classics, ensuring there is something for everyone. Our comfortable seating
+									and premium amenities, including gourmet snacks and beverages, are designed to make
+									your visit as enjoyable as possible. Whether you're here for a family outing, a date
+									night, or just a solo escape into another world, we have you covered.</p>
+								<p>Our dedicated staff is committed to delivering top-notch service and creating a
+									welcoming environment for all our guests. We continually strive to innovate and
+									improve, always looking for new ways to enhance your movie-going experience. From
+									special screenings and events to membership rewards, we aim to offer something
+									unique for every cinephile.</p>
+								<p>Thank you for choosing Cinepolis. We look forward to seeing you at the movies! Your
+									patronage and love for cinema inspire us to keep bringing the best of entertainment
+									to our community. Join us and be a part of the Cinepolis family, where every visit
+									is more than just a trip to the movies—it's an adventure.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
